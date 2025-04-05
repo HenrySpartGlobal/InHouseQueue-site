@@ -909,6 +909,17 @@ const commands = [
         "/queue suspensions"
       ]
     },
+    {
+      "name": "queue edit_labels",
+      "type": "Admin",
+      "description": "Edit the labels for a custom queue channel.",
+      "usage": [
+        "/queue edit_labels [queue_channel] [labels]"
+      ],
+      "examples": [
+        "/queue edit_labels channel:#queue labels:Sniper,Shield,Shotgun"
+      ]
+    },
 
   // ~ Set-up
   {
