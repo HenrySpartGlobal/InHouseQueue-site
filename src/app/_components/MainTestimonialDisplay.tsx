@@ -67,6 +67,16 @@ export function MainTestimonialDisplay({
               {testimonial.server.size} members
             </>
           )}
+          <br />
+          {testimonial.author.social && (
+            <a
+              href={testimonial.author.social.url}
+              target="_blank"
+              className="underline"
+            >
+              {testimonial.author.social.handle}
+            </a>
+          )}
         </p>
       </div>
     </article>

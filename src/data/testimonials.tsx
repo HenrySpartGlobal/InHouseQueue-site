@@ -18,7 +18,11 @@ export type Testimonial = {
      */
     icon: string;
     name: string;
-    href?: string;
+
+    social?: {
+      url: string;
+      handle: string;
+    };
 
     /**
      * Displays like this:
@@ -63,6 +67,10 @@ export const MAIN_TESTIMONIALS = [
       icon: "https://cdn.discordapp.com/avatars/322763949508395009/d256aa8609d74b97aa8ba6bc658ddfb2.webp?size=80",
       name: "Michel_klp",
       role: "CEO & Co-Founder",
+      social: {
+        handle: "@Michel_klp",
+        url: "https://x.com/Michel_klp",
+      },
     },
     server: {
       href: "https://discord.gg/68k4WWpJ4N",
@@ -81,6 +89,10 @@ export const MAIN_TESTIMONIALS = [
       icon: "https://cdn.discordapp.com/avatars/239426960759980043/cc74ca20d23b6f2f3fa4b7aafc39d3ba.webp?size=80",
       name: "slashcan",
       role: "Pro Player",
+      social: {
+        handle: "@slashunite",
+        url: "https://x.com/slashunite",
+      },
     },
     server: {
       href: "https://discord.gg/QB7PMqPnMX",

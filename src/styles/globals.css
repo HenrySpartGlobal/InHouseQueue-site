@@ -29,38 +29,4 @@
   footer a:hover {
     @apply text-white;
   }
-
-  /* for testimonials, when hovering over <em>, make the bg change color on hover */
-
-  .testimonial em {
-    text-decoration-line: underline;
-    text-decoration-color: theme("colors.primary");
-    text-decoration-thickness: 2px;
-    text-underline-offset: 2px;
-    background-color: transparent;
-
-    /* Inherit text color initially */
-    color: inherit;
-
-    /* Define transitions: target background-color and color */
-    /* text-decoration properties are NOT smoothly animatable */
-    transition:
-      background-color 0.3s ease-in-out,
-      color 0.3s ease-in-out;
-
-    /* Optional: Add slight padding for the background hover state */
-    /* padding: 0 0.1em; */
-  }
-
-  .testimonial em:hover {
-    /* --- Hover State: Background Highlight --- */
-    /* Turn OFF the text-decoration */
-    text-decoration-line: none;
-
-    /* Apply the background color using theme() */
-    background-color: theme("colors.primary");
-
-    /* Change text color for contrast */
-    color: theme("colors.white"); /* Or black, depending on your primary */
-  }
 }
