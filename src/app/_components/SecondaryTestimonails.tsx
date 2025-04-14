@@ -19,7 +19,7 @@ export function SecondaryTestimonials(props: { aosIndex?: number }) {
       {/* overlay to fade to gray */}
       <div className="pointer-events-none absolute -bottom-4 left-0 right-0 h-80 bg-gradient-to-b from-background-accent/0 to-background-accent" />
 
-      <h1 className="pb-6 text-center text-3xl font-bold text-white">
+      <h1 className="text-balance pb-6 text-center text-2xl font-bold text-white md:text-3xl">
         Don&apos;t just take our word for it,
         <br />
         <span className="text-primary">
@@ -27,13 +27,7 @@ export function SecondaryTestimonials(props: { aosIndex?: number }) {
         </span>
       </h1>
 
-      {/* <div className="grid max-w-5xl grid-cols-2 gap-4 lg:grid-cols-3 lg:gap-6">
-        {SECONDARY_TESTIMONIALS.map((testimonial, i) => (
-          <SecondaryTestimonialDisplay testimonial={testimonial} key={i} />
-        ))}
-      </div> */}
-
-      <div className="mx-auto grid max-w-screen-lg grid-cols-3 gap-4 p-4 lg:gap-6 lg:p-8">
+      <div className="mx-auto grid max-w-screen-lg grid-cols-1 gap-4 p-4 md:grid-cols-3 lg:gap-6 lg:p-8">
         {COLUMNS.map((column, i) => (
           <div key={i} className="flex flex-col gap-4">
             {column.map((testimonial, j) => (
