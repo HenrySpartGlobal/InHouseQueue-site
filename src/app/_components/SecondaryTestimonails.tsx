@@ -37,7 +37,11 @@ export function SecondaryTestimonials(props: { aosIndex?: number }) {
         {COLUMNS.map((column, i) => (
           <div key={i} className="flex flex-col gap-4">
             {column.map((testimonial, j) => (
-              <SecondaryTestimonialDisplay testimonial={testimonial} key={j} />
+              <SecondaryTestimonialDisplay
+                testimonial={testimonial}
+                key={j}
+                aosIndex={testimonial.index}
+              />
             ))}
           </div>
         ))}
@@ -45,6 +49,8 @@ export function SecondaryTestimonials(props: { aosIndex?: number }) {
     </section>
   );
 }
+
+type TestimonialWithIndex = Testimonial & { index: number };
 
 /**
  * Splits single array of testimonials into multiple columns,
@@ -60,17 +66,23 @@ function balanceTestimonials(testimonials: Testimonial[]) {
       ? Math.floor(testimonials.length / COLUMN_COUNT) * COLUMN_COUNT
       : testimonials.length;
 
-  const balancedTestimonials: Testimonial[][] = new Array(COLUMN_COUNT)
+  const balancedTestimonials: TestimonialWithIndex[][] = new Array(COLUMN_COUNT)
     .fill(null)
-    .map(() => new Array<Testimonial>(maxIndex));
+    .map(() => new Array<TestimonialWithIndex>(maxIndex));
 
   for (let i = 0; i < maxIndex; i++) {
-    balancedTestimonials[i % COLUMN_COUNT]!.push(testimonials[i]!);
+    balancedTestimonials[i % COLUMN_COUNT]!.push({
+      ...testimonials[i]!,
+      index: i,
+    });
   }
 
   // if there is a remainder, add it to the middle column
   if (remainder === 1) {
-    balancedTestimonials[1]!.push(testimonials[maxIndex]!);
+    balancedTestimonials[1]!.push({
+      ...testimonials[maxIndex]!,
+      index: maxIndex,
+    });
   }
 
   return balancedTestimonials;

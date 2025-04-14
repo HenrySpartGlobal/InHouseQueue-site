@@ -8,9 +8,14 @@ import Image from "next/image";
  */
 export function SecondaryTestimonialDisplay(props: {
   testimonial: Testimonial;
+  aosIndex?: number;
 }) {
   return (
-    <article className="rounded-md bg-background-accent p-3 text-base">
+    <article
+      className="rounded-md bg-background-accent p-3 text-base"
+      data-aos="fade-up"
+      data-aos-delay={(props.aosIndex ?? 0) * 100}
+    >
       <p className="whitespace-pre-wrap text-gray-50 [&_em]:font-bold [&_em]:not-italic">
         {props.testimonial.quote}
       </p>
