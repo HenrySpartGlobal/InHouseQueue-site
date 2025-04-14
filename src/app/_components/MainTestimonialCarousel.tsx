@@ -33,6 +33,7 @@ export function MainTestimonialsClient({
   const [index, setIndex] = useState(0);
   const [direction, setDirection] = useState(0);
   const intervalRef = useRef<NodeJS.Timeout | null>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   /**
    * Changes the testimonial by one slide in the specified direction (1, or -1)
@@ -85,12 +86,6 @@ export function MainTestimonialsClient({
     }
   };
 
-  // enable autoplay on mount
-  useEffect(() => {
-    startAutoplay();
-    return () => stopAutoplay();
-  }, [startAutoplay]);
-
   /**
    * Wraps an action function with stopping and starting autoplay so it doesn't interfere.
    * "resets" the autoplay timer
@@ -101,6 +96,31 @@ export function MainTestimonialsClient({
     action();
     startAutoplay();
   };
+
+  // only autoscroll if the container is in view
+  useEffect(() => {
+    if (!containerRef.current) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            startAutoplay();
+          } else {
+            stopAutoplay();
+          }
+        });
+      },
+      { threshold: 0.1 },
+    );
+
+    observer.observe(containerRef.current);
+
+    return () => {
+      observer.disconnect();
+      stopAutoplay();
+    };
+  }, [containerRef, startAutoplay]);
 
   if (!testimonials || testimonials.length === 0) {
     return null;
@@ -113,6 +133,7 @@ export function MainTestimonialsClient({
       className="relative flex w-full flex-col items-center justify-center"
       onMouseEnter={stopAutoplay}
       onMouseLeave={startAutoplay}
+      ref={containerRef}
     >
       <button
         onClick={() => handleInteraction(prevTestimonial)}
