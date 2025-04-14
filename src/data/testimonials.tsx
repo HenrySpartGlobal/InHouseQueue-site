@@ -139,6 +139,7 @@ export const SECONDARY_TESTIMONIALS = [
     },
     server: {
       href: "https://discord.gg/zP46ng8pXN",
+      name: "Better Vibes",
     },
   },
   {
@@ -156,7 +157,8 @@ export const SECONDARY_TESTIMONIALS = [
       name: "khawan_c",
     },
     server: {
-      href: "https://discord.gg/toquinhadaraposa",
+      href: "https://discord.gg/tdrlol",
+      name: "LOLBR - Toca de Raposa",
     },
   },
   {
@@ -175,6 +177,7 @@ export const SECONDARY_TESTIMONIALS = [
     },
     server: {
       href: "https://discord.gg/yNF2CztJdq",
+      name: "Blighted Badlands",
     },
   },
   {
@@ -194,6 +197,7 @@ export const SECONDARY_TESTIMONIALS = [
     },
     server: {
       href: "https://discord.gg/TmqfPVgYCV",
+      name: "OCE Pokemon Unite",
     },
   },
 ] satisfies Testimonial[];
