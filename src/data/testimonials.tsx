@@ -94,10 +94,10 @@ export const MAIN_TESTIMONIALS = [
         url: "https://x.com/slashunite",
       },
     },
-    server: {
-      href: "https://discord.gg/QB7PMqPnMX",
-      name: "Luminosity Gaming, Pokemon World Champion",
-    },
+    // server: {
+    //   href: "https://discord.gg/QB7PMqPnMX",
+    //   name: "Luminosity Gaming, Pokemon World Champion",
+    // },
   },
   {
     quote: (
