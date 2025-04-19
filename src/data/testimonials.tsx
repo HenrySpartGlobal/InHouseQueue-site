@@ -64,7 +64,7 @@ export const MAIN_TESTIMONIALS = [
       </>
     ),
     author: {
-      icon: "https://cdn.discordapp.com/avatars/322763949508395009/d256aa8609d74b97aa8ba6bc658ddfb2.webp?size=80",
+      icon: "https://d1jcobewzbwt6k.cloudfront.net/nord-micheal.webp",
       name: "Michel_klp",
       role: "CEO & Co-Founder",
       social: {
@@ -86,7 +86,7 @@ export const MAIN_TESTIMONIALS = [
       </>
     ),
     author: {
-      icon: "https://cdn.discordapp.com/avatars/239426960759980043/cc74ca20d23b6f2f3fa4b7aafc39d3ba.webp?size=80",
+      icon: "https://d1jcobewzbwt6k.cloudfront.net/slashcan.webp",
       name: "slashcan",
       role: "Pro Player",
       social: {
@@ -94,10 +94,10 @@ export const MAIN_TESTIMONIALS = [
         url: "https://x.com/slashunite",
       },
     },
-    // server: {
-    //   href: "https://discord.gg/QB7PMqPnMX",
-    //   name: "Luminosity Gaming, Pokemon World Champion",
-    // },
+    server: {
+      href: "https://discord.gg/QB7PMqPnMX",
+      name: "Luminosity Gaming, Pokemon World Champion",
+    },
   },
   {
     quote: (
@@ -107,7 +107,7 @@ export const MAIN_TESTIMONIALS = [
       </>
     ),
     author: {
-      icon: "https://cdn.discordapp.com/avatars/203961256250572800/b4273f1415ee9e620f00d4c90d1b8b6a.webp?size=80",
+      icon: "https://d1jcobewzbwt6k.cloudfront.net/astini.webp",
       name: "AstiniDota",
       role: "Professional Dota 2 Coach",
     },
@@ -134,8 +134,8 @@ export const SECONDARY_TESTIMONIALS = [
       </>
     ),
     author: {
-      icon: "https://cdn.discordapp.com/avatars/739592205265535007/79f73bb1b1edbe39bbdbd1592be190b9.webp?size=80",
-      name: "Anonymous",
+      icon: "https://d1jcobewzbwt6k.cloudfront.net/sarebear.webp",
+      name: "sarebear",
     },
     server: {
       href: "https://discord.gg/zP46ng8pXN",
@@ -153,7 +153,7 @@ export const SECONDARY_TESTIMONIALS = [
       </>
     ),
     author: {
-      icon: "https://cdn.discordapp.com/avatars/325828153786499084/0dd01e9d86d44b1d00af4cf342c83172.webp?size=80",
+      icon: "https://d1jcobewzbwt6k.cloudfront.net/khawan_c.webp",
       name: "khawan_c",
     },
     server: {
@@ -172,7 +172,7 @@ export const SECONDARY_TESTIMONIALS = [
       </>
     ),
     author: {
-      icon: "https://cdn.discordapp.com/avatars/131976833498349568/03efdb0922dd0054799407f97c38403b.webp?size=80",
+      icon: "https://d1jcobewzbwt6k.cloudfront.net/dranreb22.webp",
       name: "dranreb22",
     },
     server: {
@@ -192,7 +192,7 @@ export const SECONDARY_TESTIMONIALS = [
       </>
     ),
     author: {
-      icon: "https://cdn.discordapp.com/avatars/626005359403728896/3aa9a9c30c88097cba5d8a58b7b59a4a.webp?size=80",
+      icon: "https://d1jcobewzbwt6k.cloudfront.net/taddyyy.webp",
       name: "taddyyy",
     },
     server: {
