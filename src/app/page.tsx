@@ -8,6 +8,8 @@ import Highlight from "../partials/Home/Highlight";
 import StatCards from "../partials/Home/StatCards";
 import SupportedGames from "../partials/Home/SupportedGames";
 import Navbar from "../partials/Navbar";
+import { MainTestimonials } from "./_components/MainTestimonial";
+import { SecondaryTestimonials } from "./_components/SecondaryTestimonails";
 
 export default function HomePage() {
   return (
@@ -49,6 +51,9 @@ export default function HomePage() {
 
           {/* feature 1 */}
           <Feature1 />
+
+          {/* testimonials */}
+          <MainTestimonials />
         </div>
 
         {/* play practice progress */}
@@ -66,8 +71,11 @@ export default function HomePage() {
           <div className="mx-auto flex max-w-[96rem] flex-col justify-center gap-28 pb-4">
             <Feature3 />
           </div>
+        </div>
 
-          {/* call to action */}
+        <SecondaryTestimonials />
+
+        <div className="bg-background-accent">
           <CallToAction />
         </div>
       </div>
