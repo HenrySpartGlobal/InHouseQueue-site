@@ -102,7 +102,7 @@ export const MAIN_TESTIMONIALS = [
   {
     quote: (
       <>
-        This bot is great and has <em>helped us grow our community</em>. We're
+        This bot is great and has <em>helped us grow our community</em>. We&apos;re
         organizing prize tournaments and <em>helping players improve</em>.
       </>
     ),
@@ -130,7 +130,7 @@ export const SECONDARY_TESTIMONIALS = [
         whatever settings you need. The bot is easy to use and easy to setup.
         The <em>support staff goes above and beyond</em> to assist you with any
         problems you may have. We currently use the bot to run customs for two
-        different games and can't wait for them to add more.
+        different games and can&apos;t wait for them to add more.
       </>
     ),
     author: {
@@ -148,7 +148,7 @@ export const SECONDARY_TESTIMONIALS = [
         Honestly it’s really good, it’s <em>super easy to manage</em>, maintain
         and personalize, people from my server love it and everyday we have
         like, 2/3 closed League of Legends queues at the same time, without the
-        bot I can't imagine the work to organize the game matches, thanks for{" "}
+        bot I can&apos;t imagine the work to organize the game matches, thanks for{" "}
         <em>making our life easier</em> &lt;3
       </>
     ),
@@ -164,10 +164,10 @@ export const SECONDARY_TESTIMONIALS = [
   {
     quote: (
       <>
-        We've been using the inhouse bot for a little over a month now.
+        We&apos;ve been using the inhouse bot for a little over a month now.
         Immediately, we wanted to get the premium but wanted to test it out. We
         were popping with inhouses for the first week so we upgraded it to tier
-        2 and <em>immediately got more people playing</em>. It's been pretty
+        2 and <em>immediately got more people playing</em>. It&apos;s been pretty
         good at <em>helping us build our community</em>.
       </>
     ),
@@ -185,7 +185,7 @@ export const SECONDARY_TESTIMONIALS = [
       <>
         The inhouse queue bot has been a <em>fantastic addition</em> to our
         Pokemon Unite server. It has really <em>helped our community grow</em>{" "}
-        through allowing each other to play some fun games together. It's also
+        through allowing each other to play some fun games together. It&apos;s also
         helped newer players practice more with competitive players that have
         played longer so they can learn new things. I cannot recommend this bot
         enough for making it so simple to host inhouse games in your community!
