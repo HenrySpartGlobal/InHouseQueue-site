@@ -18,12 +18,12 @@ const config = {
 
   images: {
     remotePatterns: [
-      // allow loading avatar images from Discord's CDN
+      // allow loading avatar images my aws cdn
       {
         protocol: "https",
-        hostname: "cdn.discordapp.com",
+        hostname: "d1jcobewzbwt6k.cloudfront.net",
         port: "",
-        pathname: "/avatars/**",
+        pathname: "/*",
       },
     ],
   },
