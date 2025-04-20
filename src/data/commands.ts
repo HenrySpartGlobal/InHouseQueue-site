@@ -920,6 +920,18 @@ const commands = [
         "/queue edit_labels channel:#queue labels:Sniper,Shield,Shotgun"
       ]
     },
+    {
+    "name": "game switch",
+    "type": "Game",
+    "description": "Swap two players’ teams in an in‑progress game.",
+    "usage": [
+      "/game switch [player_1] [player_2] (game_id)"
+    ],
+    "examples": [
+      "/game switch @Alice @Bob",
+      "/game switch @Alice @Bob 7f1022d2"
+     ]
+    },
 
   // ~ Set-up
   {
