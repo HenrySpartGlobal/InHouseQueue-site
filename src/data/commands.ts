@@ -677,10 +677,10 @@ const commands = [
       "type": "Admin",
       "description": "Adjust a players starting MMR",
       "usage": [
-       "/mmr set_starting [player] [mmr] [game] (queue_channel)",
+       "/mmr set_starting",
       ],
       "examples": [
-          "/mmr set_starting @Faker ~4000 League of Legends",
+          "/mmr set_starting",
       ]
     },
     {
