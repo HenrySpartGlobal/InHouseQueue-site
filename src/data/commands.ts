@@ -9,13 +9,15 @@ const commands = [
       "/reset leaderboard",
       "/reset user [member]",
       "/reset queue [gameid]",
-      "/reset mmr (member) (queue_channel)"
+      "/reset mmr_user [member] [game] [queue_channel]",
+      "/reset mmr_all [game] [queue_channel]"
       ],
     "examples": [
       "/reset leaderboard #pro-queue",
       "/reset user @John",
       "/reset queue 03134ff5",
-      "/reset mmr @John"
+      "/reset mmr_user @John Valorant #queue",
+      "/reset mmr_all Valorant #queue"
     ]
   },
   {
