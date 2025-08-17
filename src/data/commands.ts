@@ -892,7 +892,7 @@ const commands = [
     },
     {
     "name": "game switch",
-    "type": "Game",
+    "type": "Admin",
     "description": "Swap two players’ teams in an in‑progress game.",
     "usage": [
       "/game switch [player_1] [player_2] (game_id)"
