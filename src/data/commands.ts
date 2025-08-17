@@ -47,10 +47,11 @@ const commands = [
     "type": "Admin",
     "description": "Set a winner for an ongoing game without requiring a vote.",
     "usage": [
-      "/winner [role]"
+      "/winner [role] (loss_reduction)"
     ],
     "examples": [
-      "/winner @Red: 316d8cc7"
+      "/winner @Red: 316d8cc7",
+      "/winner @Red: 316d8cc7 60%",
     ]
   },
   {
